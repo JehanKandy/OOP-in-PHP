@@ -91,6 +91,14 @@
     echo "Color of car is " . $audi->color;
     echo "<br> Brand of car is " . $audi->brand;
     echo "<br> Number of car is " . $audi->number;
+    
+    echo "<br><br>";
 
+    /*
+        var_dump -  used to dump information about a variable
+        instanceof - used to check if an object belongs to a class
+    */
+
+    var_dump($audi instanceof car);
 
 ?>
