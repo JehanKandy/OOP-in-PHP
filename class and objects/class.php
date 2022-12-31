@@ -38,6 +38,13 @@
         }        
     }
 
+
+    /*
+        following codes i access the car class property using  methods 
+        set_color, set_brand, set_number
+    
+    */
+
     // now i assign new car called bmw to car class
     $bmw = new car();
 
@@ -51,8 +58,11 @@
     
     $bmw->set_number("123456789");
 
-
+   
     // then i print color of the bmw car
+
+    echo "<u>Property Value change using methods</u>  <br><br>";
+
     echo "Color of car is " . $bmw->get_color();
 
     // now i print brand of the bmw car
@@ -60,5 +70,27 @@
 
     // now i print number of th bmw car
     echo "<br> Number of car is " . $bmw->get_number();
+
+
+    /* 
+        in the following code lines i access the property called $seats not useing any method
+        so that there is another way to asscess any property outside from the class
+    */
+
+    echo "<br><br><hr><br>";
+
+    
+    echo "<u>Property Value change directly (not using methods)</u> <br><br>";
+
+    $audi = new car();
+
+    $audi->color = "white";
+    $audi->brand = "Audi";
+    $audi->number = "789654123";
+
+    echo "Color of car is " . $audi->color;
+    echo "<br> Brand of car is " . $audi->brand;
+    echo "<br> Number of car is " . $audi->number;
+
 
 ?>
