@@ -15,8 +15,9 @@ in first code lines i create a class called `car{}` with 3 properties `$color`, 
         public $brand;
         public $number;
       
-and the i create 6 methods of access the above 3 properties, 
-`set_color($color)` , `get_color()`
+and the i create 6 methods of access the above 3 properties, <br>
+
+1. `set_color($color)` , `get_color()`
 
         function set_color($color) {
             $this->color = $color;
@@ -27,3 +28,4 @@ and the i create 6 methods of access the above 3 properties,
         } 
 
 for set the car color and get th color of car
+
